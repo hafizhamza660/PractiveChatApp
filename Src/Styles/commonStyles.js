@@ -18,6 +18,11 @@ export const commonStyles = StyleSheet.create({
     alignItems: 'center',
   },
   container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  homecontainer: {
     backgroundColor: '#f5f5f5',
     flex: 1,
   },

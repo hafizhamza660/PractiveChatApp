@@ -4,6 +4,7 @@ import HomeScreen from '../../Screens/HomeScreen';
 import AddRoomScreen from '../../Screens/AddRoomScreen';
 import {IconButton} from 'react-native-paper';
 import RoomScreen from '../../Screens/RoomScreen';
+import RoomListScreen from '../../Screens/RoomListScreen';
 
 // create two new instances
 const ChatAppStack = createStackNavigator();
@@ -43,6 +44,8 @@ function ChatApp() {
           title: route.params.thread.name,
         })}
       />
+
+      <ChatAppStack.Screen name="RoomsList" component={RoomListScreen} />
     </ChatAppStack.Navigator>
   );
 }
